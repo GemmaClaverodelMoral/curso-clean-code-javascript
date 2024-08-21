@@ -12,7 +12,7 @@ const getResult = () => "Results";
     (1, 2, 3)
   ].map((n) => n * 2);
 
-// Ejemplos del this
+// Ejemplos del this con arroy function
 const counter = {
   number: 0,
   increase() {
@@ -20,7 +20,7 @@ const counter = {
   },
 };
 
-counter.increase(); //> 1 2 3 4 5
+counter.increase(); //> 1 2 3 4 5 ...
 
 const counter = {
   number: 0,
@@ -33,6 +33,7 @@ const counter = {
 
 counter.increase(); //> NaN, NaN, NaN, NaN, NaN
 
+// con .bind(this)
 const counter = {
   number: 0,
   increase() {
